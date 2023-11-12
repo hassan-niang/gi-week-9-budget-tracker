@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Budget!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Track Your Spending</h1>
+        <h2>Do you feel as if you do not know where your money is going? Track all your expenses below and to help you
+            hold
+            on to your money a little longer.</h2>
+    </header>
+    <div id="app">
+        <table class="budget-tracker">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="entries">
+                <tr>
+                    <td>
+                        <input type="date" class="input input-date" id="date">
+                    </td>
+
+                    <td>
+                        <input type="text" class="input input-description"
+                            placeholder="Add Description of Expesense (Phone, Rent, Payday)" id="description">
+                    </td>
+
+                    <td>
+                        <select class="input input-type" id="type">
+                            <option value="Expenses">Expense</option>
+                            <option value="Income">Income</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <input type="number" class="input input-amount" id="amount">
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="5" class="summary"><button class="new-entry" id="entry">New Entry</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="summary">
+                        <strong>Total:</strong>
+                        <span class="total" id="current-balance">$0.00</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="class"></div>
+    <div id="display-entries"></div>
+</body>
+
+</html>

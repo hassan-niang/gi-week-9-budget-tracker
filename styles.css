@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(to right, #3498db, #e74c3c);
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+}
+
+header {
+    color: blue;
+}
+
+.budget-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.budget-tracker th {
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+
+.budget-tracker td {
+    padding: 5px;
+}
+
+.input {
+    border: 1px solid green;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: yellow;
+}
+
+.input delete-entry {
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.delete-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    background: none;
+    color: red;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete-entry:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.controls,
+.summary {
+    text-align: right;
+}
+
+/*# sourceMappingURL=styles.css.map */

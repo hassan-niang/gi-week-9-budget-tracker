@@ -1,0 +1,74 @@
+$primary-color : blue;
+
+@mixin gradient($color1, $color2) {
+    background: linear-gradient(to right, $color1, $color2);
+}
+
+// Use the mixin to set the background color of the webpage
+body {
+    @include gradient(#3498db, #e74c3c);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+}
+
+header {
+    color: $primary-color;
+}
+
+.budget-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+
+    th {
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 2px solid black;
+    }
+
+    td {
+        padding: 5px;
+    }
+}
+
+.input {
+    border: 1px solid green;
+    border-radius: 5px;
+    outline: none;
+
+    &:focus {
+        border-color: yellow;
+    }
+
+    delete-entry {
+        height: 30px;
+        font-size: 13px;
+        padding: 0 10px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+.delete-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    background: none;
+    color: red;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 0, 0, 0.1);
+    }
+}
+
+.controls,
+.summary {
+    text-align: right;
+}
